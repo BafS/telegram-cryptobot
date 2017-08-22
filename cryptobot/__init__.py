@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Simple telegram bot to have crypto currencies prices from cryptowatch.ch
+Simple telegram bot to read crypto currencies prices from cryptowatch.ch
 """
 
+import json
+import logging
 from telegram import ParseMode
 from telegram.ext import Updater, CommandHandler, MessageHandler
-import logging
 import requests
-import json
 
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -57,7 +57,7 @@ def error(bot, update, error):
 
 def main():
     # EventHandler
-    updater = Updater("TOKEN")
+    updater = Updater("330087777:AAH27OB3OQf6UdJfGx7D4VLkiSipY7j7hmA")
 
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
